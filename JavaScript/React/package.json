@@ -1,0 +1,20 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "Learning Programming.",
+  "main": "index.js",
+  "scripts": {
+    "js": "parcel ./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakdaniel/Learn.git"
+  },
+  "author": "Shak Daniel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shakdaniel/Learn/issues"
+  },
+  "homepage": "https://github.com/shakdaniel/Learn#readme"
+}
