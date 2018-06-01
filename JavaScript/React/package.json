@@ -1,20 +1,19 @@
 {
-  "name": "learn",
-  "version": "1.0.0",
-  "description": "Learning Programming.",
-  "main": "index.js",
+  "name": "react",
+  "description": "Learning React.",
+  "main": "app.js",
   "scripts": {
-    "js": "parcel ./index.html",
+    "image": "parcel ./image_app/index.html",
+    "itune": "parcel ./itune_app/index.html",
+    "build": "parcel build index.html -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shakdaniel/Learn.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
   },
-  "author": "Shak Daniel",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shakdaniel/Learn/issues"
-  },
-  "homepage": "https://github.com/shakdaniel/Learn#readme"
+  "devDependencies": {
+    "parcel-bundler": "^1.8.1"
+  }
 }
