@@ -1,14 +1,14 @@
 # dependencies
-/node_modules
+node_modules/
 
 # test
-/coverage
+coverage/
 
 # dev
-/dist
+dist/
 
 # prod
-/build
+build/
 
 # misc
 .DS_Store
