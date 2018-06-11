@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+// import logo from './logo.svg';
+// import './App.css';
+import Toggle from './ToggleRPC';
+import Portal from './Portal';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Fragment>
+        <Toggle>
+          {({ on, toggle }) => (
+            <Fragment>
+              <button onClick={toggle}>Show/Hide</button>
+              {on && <h1>Show me!</h1>}
+              <Portal>
+                {on && <Fragment>Hi, I'm in a Portal!</Fragment>}
+              </Portal>
+            </Fragment>
+          )}
+        </Toggle>
+
+      </Fragment>
     );
   }
 }
