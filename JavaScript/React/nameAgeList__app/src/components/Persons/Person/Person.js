@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './Person.module.scss';
+import classes from './Person.css';
 
 class Person extends React.Component {
   constructor(props) {
